@@ -1,0 +1,47 @@
+{
+  "Apple___Apple_scab": {
+    "name": "Apple Scab",
+    "description": "Apple scab is a disease of apple trees caused by the ascomycete fungus Venturia inaequalis. It manifests as dull black or grey-brown lesions on the surface of tree leaves, buds or fruits.",
+    "remedy": "Remove fallen leaves and fruit to reduce the spread. Apply appropriate fungicides like Captan or Myclobutanil during early spring. Ensure proper pruning for air circulation."
+  },
+  "Apple___Black_rot": {
+    "name": "Apple Black Rot",
+    "description": "Black rot is a disease caused by the fungus Botryosphaeria obtusa, which can infect the fruit, leaves, and bark of apple trees.",
+    "remedy": "Prune out dead or diseased wood. Remove all mummified fruit from the tree. Use copper-based fungicides early in the season."
+  },
+  "Apple___healthy": {
+    "name": "Healthy Apple Leaf",
+    "description": "The leaf shows no signs of fungal, bacterial, or viral diseases.",
+    "remedy": "Maintain good agricultural practices, ensure proper watering, and fertilize as needed."
+  },
+  "Potato___Early_blight": {
+    "name": "Potato Early Blight",
+    "description": "Early blight is a common tomato and potato disease caused by the fungus Alternaria solani. It produces target-like spots on older leaves.",
+    "remedy": "Practice crop rotation. Ensure plants are properly spaced. Apply fungicides containing chlorothalonil or copper."
+  },
+  "Potato___Late_blight": {
+    "name": "Potato Late Blight",
+    "description": "Late blight is a potentially devastating disease caused by the oomycete Phytophthora infestans. It causes rapid browning and wilting of leaves.",
+    "remedy": "Destroy infected plants immediately. Avoid overhead watering. Use resistant varieties and apply fungicides preventatively."
+  },
+  "Potato___healthy": {
+    "name": "Healthy Potato Leaf",
+    "description": "The leaf is healthy and shows no signs of disease.",
+    "remedy": "Continue standard care, including regular watering, fertilizing, and monitoring for pests."
+  },
+  "Tomato___Bacterial_spot": {
+    "name": "Tomato Bacterial Spot",
+    "description": "Bacterial spot is caused by Xanthomonas species. It causes small, water-soaked, dark spots on leaves and fruit.",
+    "remedy": "Avoid overhead watering. Apply copper-based bactericides. Remove and destroy infected plant debris."
+  },
+  "Tomato___Early_blight": {
+    "name": "Tomato Early Blight",
+    "description": "A fungal disease causing 'bullseye' spots on lower leaves.",
+    "remedy": "Remove infected lower leaves. Water at the base of the plant. Use a fungicide containing chlorothalonil."
+  },
+  "Tomato___healthy": {
+    "name": "Healthy Tomato Leaf",
+    "description": "The leaf is vibrant, green, and healthy.",
+    "remedy": "Maintain optimal watering, apply balanced fertilizer, and ensure good air circulation."
+  }
+}
