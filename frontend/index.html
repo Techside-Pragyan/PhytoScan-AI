@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhytoScan AI - Plant Disease Identifier</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-effect"></div>
+    
+    <div class="container">
+        <header>
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22c-4.97-4.97-7-10-7-14 0-3.87 3.13-7 7-7s7 3.13 7 7c0 4-2.03 9.03-7 14z"></path>
+                    <path d="M12 22v-8"></path>
+                    <path d="M12 14c-2.67 0-5.33-1.33-8-4"></path>
+                </svg>
+                <h1>PhytoScan AI</h1>
+            </div>
+            <p class="subtitle">Advanced Deep Learning for Plant Health Diagnostics</p>
+        </header>
+
+        <main>
+            <div class="upload-section glass-panel">
+                <div id="drop-area" class="drop-area">
+                    <input type="file" id="file-input" accept="image/*" hidden>
+                    <label for="file-input" class="upload-label">
+                        <svg class="upload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        <p>Drag & Drop your leaf image here</p>
+                        <span class="btn primary-btn">Browse Files</span>
+                    </label>
+                </div>
+                
+                <div id="preview-container" class="preview-container hidden">
+                    <img id="image-preview" src="" alt="Preview">
+                    <button id="remove-btn" class="btn icon-btn" title="Remove image">✕</button>
+                </div>
+
+                <button id="analyze-btn" class="btn action-btn hidden">
+                    Analyze Image
+                </button>
+            </div>
+
+            <!-- Loading State -->
+            <div id="loading-state" class="loading-state hidden glass-panel">
+                <div class="spinner"></div>
+                <p>AI is analyzing the cellular structure...</p>
+            </div>
+
+            <!-- Results Section -->
+            <div id="result-section" class="result-section hidden glass-panel">
+                <div class="result-header">
+                    <h2>Diagnosis Complete</h2>
+                    <div class="confidence-badge">
+                        <span id="confidence-value">98.5%</span> Confidence
+                    </div>
+                </div>
+                
+                <div class="result-details">
+                    <div class="detail-group">
+                        <h3>Condition</h3>
+                        <p id="disease-name" class="disease-name">Tomato Early Blight</p>
+                    </div>
+                    
+                    <div class="detail-group">
+                        <h3>Description</h3>
+                        <p id="disease-desc">A fungal disease causing 'bullseye' spots on lower leaves.</p>
+                    </div>
+                    
+                    <div class="detail-group remedy-group">
+                        <h3>Suggested Treatment</h3>
+                        <p id="disease-remedy">Remove infected lower leaves. Water at the base of the plant.</p>
+                    </div>
+                </div>
+                
+                <button id="reset-btn" class="btn secondary-btn">Analyze Another Plant</button>
+            </div>
+
+            <!-- Samples Section -->
+            <div class="samples-section glass-panel">
+                <h3>Sample References</h3>
+                <div class="samples-grid">
+                    <div class="sample-card">
+                        <div class="sample-img healthy"></div>
+                        <span>Healthy Leaf</span>
+                    </div>
+                    <div class="sample-card">
+                        <div class="sample-img diseased"></div>
+                        <span>Diseased Leaf</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Powered by PyTorch and FastAPI</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
